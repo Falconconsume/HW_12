@@ -187,6 +187,13 @@
     margin: 0 auto;
 }
 
+.container3 {
+    max-width: calc(var(--container-width) + var(--container-space));
+    padding: 0 var(--container-space);
+    width: 100%;
+    margin: 0 auto;
+}
+
 .full_page {
     height: 100vh;
 }
@@ -269,9 +276,10 @@
 }
 
 .image_girl {
-    width: 900px;
+    max-width: 900px;
     min-height: 529px;
     align-self: right;
+    width: 100%;
 }
 
 .bottom_txt {
@@ -360,7 +368,8 @@
 }
 
 .gifs_section2 {
-    padding: 250px 0px;
+    padding-bottom: 250px;
+    padding-top: 250px;
 }
 
 .gifs_section3 {
@@ -408,4 +417,105 @@
     padding-top: 63px;
     text-align: center;
     margin-left:35px
+}
+
+.entertaiment {
+    padding-top: 120px;    
+}
+
+.gap_entertaim {
+    gap: 110px;
+}
+
+.list_entertaim {
+    justify-content: space-around;
+    padding-top: 58px;
+}
+
+.title_entertaim {
+    text-align: center;
+    font-size: 50px;
+    padding-bottom: 52px;
+}
+
+.background_orange {
+    background-color: var(--bg-body);
+    padding-bottom: 147px;
+}
+
+.list_activities {
+    max-width: 330px;
+    min-height: 294px;
+    text-align: center;
+    display: flex;
+    align-items: center;
+}
+
+.icons_entertaim {
+    width: 160px;
+    height: 120px;
+}
+
+.gap_icons {
+    gap: 20px;
+}
+
+.small_title_entetaim {
+    font-size: var(--h6);
+    line-height: 35px;
+}
+
+.txt_entertaim {
+    width: 303px;
+    font-size: var(--fs-lg);
+    line-height: 25px;
+}
+
+.icons_local {
+    max-width: 146px;
+    align-items:center;
+}
+
+.txt_local {
+    max-width:409px;
+    line-height: 30px; 
+    font-size: var(--txt)
+
+}
+
+.gap_local {
+    gap: 20px;
+}
+
+.padding_pc {
+    padding-top: 38px;
+}
+
+.local_small_title1 {
+    padding-top: 24px;
+    padding-bottom: 38px;
+}
+
+.local_small_title2 {
+    padding-top: 54px;
+    padding-bottom: 38px;
+}
+
+.local_small_title3 {
+    padding-top: 80px;
+    padding-bottom: 38px;
+}
+
+.localization {
+    padding-top: 154px;
+}
+
+.list_local {
+    padding-top: 75px;
+}
+
+.learn {
+    line-height: 30px;
+    padding-top: 25px;
+    font-size: var(--txt);
 }
