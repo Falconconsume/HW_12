@@ -35,6 +35,11 @@
     --container-space: 80px;
 }
 
+html, body {
+    max-width: 100%;
+    overflow-x: hidden;
+}
+
 .your-style {
     font-family: 'Graphik LCG';
     font-weight: normal;
@@ -171,17 +176,21 @@
     flex-direction: column;
 }
 
+.flex-row {
+    flex-direction: row;
+}
+
 /* containter */
 
 .container1 {
-    max-width: calc(var(--container-width) + var(--container-space)*4.5);
+    max-width: calc(var(--container-width) + var(--container-space) * 3);
     padding: 0 var(--container-space);
     width: 100%;
     margin: 0 auto;
 }
 
 .container2 {
-    max-width: calc(var(--container-width) + var(--container-space) * 4);
+    max-width: calc(var(--container-width) + var(--container-space) * 2);
     padding: 0 var(--container-space);
     width: 100%;
     margin: 0 auto;
@@ -296,28 +305,22 @@
 
 .orange_section {
     margin-top: 147px;
-    height: 430px;
+    min-height: 430px;
     background-color: var(--bg-orange);
-    align-items: center;
     width: 100%;
 }
 
 .title_orange {
     font-size: 50px;
-    min-width: 720px;    
-    min-height: 120px;
     text-align: center;
     line-height: 60px;
+    padding-top: 100px;
 }
 
-.orange_models {
-    padding-top: 108px;
-}
-
-.list_models {
-    justify-content: space-around;
-    gap: 120px;
-    padding-top: 82px;
+.gap_orange {
+    gap: 103px;
+    padding-top: 80px;
+    align-items: center;
 }
 
 .title_gif1 {
@@ -512,10 +515,221 @@
 
 .list_local {
     padding-top: 75px;
+    padding-bottom: 125px;
 }
 
 .learn {
     line-height: 30px;
     padding-top: 25px;
     font-size: var(--txt);
+    color: var(--black);
+}
+
+.man_section {
+    background-color: #C9E8F2;
+    padding-bottom: 105px;
+}
+
+.man_flex {
+    padding-top: 63px;
+    gap: 25px;
+}
+
+.info_man {
+    padding-top:25px;
+}
+
+.title_man {
+    font-size: 30px;
+    line-height: 40px;
+    padding-bottom: 23px;
+    max-width: 920px;
+    width: 100%;
+}
+
+.txt_man {
+    font-size: var(--txt);
+    padding-bottom: 7px;
+    line-height: 25px;
+}
+
+.border_line {
+    border-left: 1px solid var(--black);
+    height: 168px;
+}
+
+.cake_section {
+    background-color: var(--bg-brown);
+    padding: 70px 0px;
+}
+
+.list_cake {
+    gap:20px; 
+}
+
+.ul_cake {
+    padding-left:70px;
+}
+
+.title_cake {
+    padding-right: 125px;
+    font-size: 35px;
+}
+
+.gap_cake {
+    gap: 70px;
+}
+
+.cake_img {
+    padding-right:50px;
+}
+
+.icons_brown {
+    height: 36px;
+    width: 150px;
+}
+
+.stars {
+    height: 20px;
+    width: 128px;
+}
+
+.bird_section {
+    padding: 170px 0px;
+    width: 100%;
+}
+
+.title_bird {
+    line-height: 75px;
+    max-width: 791px;
+    text-align: center;
+    padding-bottom: 10px;
+    width: 100%;
+
+}
+
+.txt_bird {
+    line-height: 30px;
+    padding-bottom: 35px;
+    max-width: 539px;
+    text-align: center;
+    width: 100%;
+}
+
+.btn_bird {
+    margin-top: 32px;
+    border: 0px;
+    width: 193px;
+    height: 60px;
+    background-color: var(--bg-strong-orange);
+    font-size: var(--fs-md1);
+    color: var(--white);
+}
+
+.img_bird {
+    min-height: 445px;
+    max-width: 1000px;
+    width: 100%;
+}
+
+.easy_orange {
+    background-color: var(--bg-orange);
+}
+
+.easy_padding {
+    padding: 120px 0px;
+}
+
+.txt_easy {
+    padding-top: 30px;
+    font-size: var(--txt);
+}
+
+.btn_easy {
+    margin-top: 54px;
+    width: 160px;
+    height: 60px;
+    background-color: var(--black);
+    color: var(--white);
+    border: 0px;
+    font-size: var(--fs-md2);
+}
+
+.title_studies {
+    font-size: 40px;
+}
+
+.studies {
+    padding: 92px 0px;
+}
+
+.title_studies {
+    padding-bottom: 25px;
+}
+
+.img_case {
+    max-width: 300px;
+    min-height: 300px;
+    width: 100%;
+}
+
+.img_special {
+    max-width: 80px;
+    min-height: 32px;
+    width: 100%;
+    padding-bottom: 11px;
+    padding-top: 31px;
+}
+
+.txt_case {
+    width: 290px;
+    font-size: 20px;
+}
+
+.a_case {
+    font-size: 20px;
+    color: var(--black);
+    padding-top: 15px;
+}
+
+.list_case {  
+    gap: 10px;
+}
+
+.title_list_case {
+    font-size: var(--txt);
+    padding-bottom: 20px;
+}
+
+.list_ul_case {
+    font-size: var(--fs-md);
+}
+
+.list_cases {
+    gap: 83px;
+}
+
+.gap_cases {
+    gap: 100px;
+}
+
+.main_footer {
+    padding-top: 50px;
+}
+
+.foot_left {
+    gap: 14px;
+}
+
+.img_foot {
+    width: 90px;
+    height: 20px;
+}
+
+.txt_foot_right {
+    padding-right: 110px;
+}
+
+.footer {
+    padding-bottom: 43px;
 }
