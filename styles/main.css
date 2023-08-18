@@ -146,6 +146,10 @@ body {
     font-style: normal;
 }
 
+.border-box {
+    box-sizing: border-box;
+}
+
 /* flex */
 
 .flex {
@@ -154,7 +158,6 @@ body {
 
 .flex-wrap {
     flex-wrap: wrap;
-    box-sizing: border-box;
 }
 
 .justify-center {
