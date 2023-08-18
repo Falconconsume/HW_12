@@ -1,8 +1,14 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat&family=Roboto:wght@400;700&display=swap');
 
+@media only screen and (max-width: 600px) {
+    body {
+        padding: 0;
+    }
+}
+
 :root {
     /* colors */
-    --white:#fff;
+    --white: #fff;
     --black: #000;
     --orange: #FF6336;
     --blue: #008;
@@ -12,8 +18,8 @@
     --light-blue: #00F;
     --light-green: #090;
     /* bg-colors */
-    --bg-strong-orange:#FF6336;
-    --bg-orange:#FF9C7D;
+    --bg-strong-orange: #FF6336;
+    --bg-orange: #FF9C7D;
     --bg-body: #FFF8E4;
     --bg-blue: #C9E8F2;
     --bg-brown: #DABC98;
@@ -25,17 +31,15 @@
     --fs-lg: 18px;
     --txt: 20px;
     --h6: 25px;
-    --h5: 30px
-    --h4: 35px
-    --h3: 40px
-    --h2: 50px;
+    --h5: 30px --h4: 35px --h3: 40px --h2: 50px;
     --h1: 65px;
     /* container */
     --container-width: 1110px;
     --container-space: 80px;
 }
 
-html, body {
+html,
+body {
     max-width: 100%;
     overflow-x: hidden;
 }
@@ -101,7 +105,7 @@ html, body {
 }
 
 .black {
-    color :var(--black)
+    color: var(--black)
 }
 
 .orange {
@@ -150,6 +154,7 @@ html, body {
 
 .flex-wrap {
     flex-wrap: wrap;
+    box-sizing: border-box;
 }
 
 .justify-center {
@@ -208,7 +213,7 @@ html, body {
 }
 
 .ul_nav {
-    gap:57px;
+    gap: 57px;
     padding-left: 51px;
 }
 
@@ -252,15 +257,13 @@ html, body {
 }
 
 .txt_girl {
-    font-size: var(--h6);
     max-width: 471px;
     min-height: 140px;
     color: #000;
-    font-family: Graphik LC TT;
     font-size: 25px;
     font-style: normal;
     font-weight: 400;
-    line-height: 35px; /* 140% */
+    line-height: 35px;
 }
 
 .gap_girl {
@@ -300,7 +303,7 @@ html, body {
 }
 
 .padding_bottom {
-    padding-top:25px;
+    padding-top: 25px;
 }
 
 .orange_section {
@@ -326,7 +329,7 @@ html, body {
 .title_gif1 {
     font-size: 50px;
     line-height: 60px;
-    max-width:493px;
+    max-width: 493px;
 }
 
 .txt_small_gif1 {
@@ -336,15 +339,15 @@ html, body {
 .txt_gif1 {
     font-size: var(--txt);
     line-height: 30px;
-    max-width:491px;
+    max-width: 491px;
 }
 
 .gap_gif1 {
-    gap:30px;
+    gap: 30px;
 }
 
 .gif_1 {
-    align-self:right;
+    align-self: right;
     display: flex;
     justify-content: space-between;
     max-width: 632px;
@@ -382,7 +385,7 @@ html, body {
 .txt_gif3 {
     font-size: var(--txt);
     line-height: 30px;
-    max-width:520px;
+    max-width: 520px;
 }
 
 .txt_coding {
@@ -419,11 +422,11 @@ html, body {
     display: flex;
     padding-top: 63px;
     text-align: center;
-    margin-left:35px
+    margin-left: 35px
 }
 
 .entertaiment {
-    padding-top: 120px;    
+    padding-top: 120px;
 }
 
 .gap_entertaim {
@@ -476,14 +479,13 @@ html, body {
 
 .icons_local {
     max-width: 146px;
-    align-items:center;
+    align-items: center;
 }
 
 .txt_local {
-    max-width:409px;
-    line-height: 30px; 
+    max-width: 409px;
+    line-height: 30px;
     font-size: var(--txt)
-
 }
 
 .gap_local {
@@ -536,7 +538,7 @@ html, body {
 }
 
 .info_man {
-    padding-top:25px;
+    padding-top: 25px;
 }
 
 .title_man {
@@ -564,11 +566,11 @@ html, body {
 }
 
 .list_cake {
-    gap:20px; 
+    gap: 20px;
 }
 
 .ul_cake {
-    padding-left:70px;
+    padding-left: 70px;
 }
 
 .title_cake {
@@ -581,7 +583,7 @@ html, body {
 }
 
 .cake_img {
-    padding-right:50px;
+    padding-right: 50px;
 }
 
 .icons_brown {
@@ -627,7 +629,6 @@ html, body {
 }
 
 .img_bird {
-    min-height: 445px;
     max-width: 1000px;
     width: 100%;
 }
@@ -692,7 +693,7 @@ html, body {
     padding-top: 15px;
 }
 
-.list_case {  
+.list_case {
     gap: 10px;
 }
 
@@ -711,6 +712,7 @@ html, body {
 
 .gap_cases {
     gap: 100px;
+
 }
 
 .main_footer {
@@ -732,4 +734,8 @@ html, body {
 
 .footer {
     padding-bottom: 43px;
+}
+
+.txt_foot_left {
+    padding-bottom: 20px;
 }
