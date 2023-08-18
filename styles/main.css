@@ -4,7 +4,11 @@
     body {
         padding: 0;
     }
+    * {
+        box-sizing: border-box;
+    }
 }
+
 
 :root {
     /* colors */
@@ -392,8 +396,9 @@ body {
 }
 
 .txt_coding {
-    height: 300px;
-    width: 500px;
+    min-height: 300px;
+    max-width: 500px;
+    width: 100%;
     align-items: center;
     font-size: var(--fs-md);
 }
