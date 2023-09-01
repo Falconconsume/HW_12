@@ -744,6 +744,12 @@ body {
 
 /* media */
 
+@media (max-width: 1430px) and (min-width:1200px) {
+    * {
+        box-sizing: border-box;
+    }
+}
+
 @media only screen and (max-width: 1200px) {
     * {
         box-sizing: border-box;
